@@ -24,9 +24,9 @@ const Display: React.FC<DisplayProps> = ({
   return (
     <div className="p-5">
       {/* Top Section: Display Values */}
-      <div className="grid grid-cols-5 mb-5 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mb-5 gap-4">
         {/* product info */}
-        <div className="border p-4">
+        <div className="border p-4 shadow">
           <h3 className="text-lg font-medium border-b pb-2">
             Best Selling Product
           </h3>
@@ -44,7 +44,7 @@ const Display: React.FC<DisplayProps> = ({
         </div>
 
         {/* Available product list */}
-        <div className="border p-4">
+        <div className="border p-4 shadow">
           <h3 className="text-lg font-medium border-b pb-2">
             Available Product List
           </h3>
@@ -57,7 +57,7 @@ const Display: React.FC<DisplayProps> = ({
           </ul>
         </div>
         {/* Recent days sales */}
-        <div className="border p-4">
+        <div className="border p-4 shadow">
           <h3 className="text-lg font-medium border-b pb-2">
             Recent {dailySales?.length} days Sales
           </h3>
@@ -70,12 +70,12 @@ const Display: React.FC<DisplayProps> = ({
           </ul>
         </div>
         {/* address  */}
-        <div className="border p-4">
+        <div className="border p-4 shadow">
           <h3 className="text-lg font-medium border-b pb-2">Address</h3>
           <p className="mt-2">{address}</p>
         </div>
         {/* total revenue */}
-        <div className="border p-4">
+        <div className="border p-4 shadow">
           <h3 className="text-lg font-medium border-b pb-2">Total Revenue</h3>
           <p className="mt-2">{totalSale}</p>
         </div>
@@ -84,7 +84,7 @@ const Display: React.FC<DisplayProps> = ({
       {/* forms */}
       <div className="">
         <h2 className="text-center text-xl mt-2 font-semibold">Forms Inputs</h2>
-        <div className="grid grid-cols-5 mb-5 gap-4 mt-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mb-5 gap-4 mt-5">
           {/* product info */}
           <div className="border p-4">
             <h3 className="text-base text-center font-medium border-b pb-2">
