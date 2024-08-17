@@ -1,4 +1,3 @@
-// src/App.tsx
 import React, { useState } from 'react';
 import { DataObject, DisplayProps } from './components/display/types';
 import Display from './components/display/Display';
